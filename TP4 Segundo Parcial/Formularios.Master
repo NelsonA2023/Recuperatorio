@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Formularios.master.cs" Inherits="TP4_Segundo_Parcial.Formularios" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <nav>
+             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Formulario1.aspx">Formulario 1</asp:HyperLink>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Formulario2.aspx">Formulario 2</asp:HyperLink>
+         </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+               © Nelson Andrenacci. TP4.
+        </footer>
+    </form>
+</body>
+</html>
